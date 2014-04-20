@@ -98,10 +98,14 @@ body {
   padding: 0 3%;
 }
 
-.aboutSection .largeTitle, .workSection .largeTitle, .skillSection .largeTitle {
+.aboutSection, .workSection, .skillSection, .contactSection {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.aboutSection .largeTitle, .workSection .largeTitle, .skillSection .largeTitle, .contactSection .largeTitle {
   font-size: 2em;
 }
-.aboutSection .subContainer, .workSection .subContainer, .skillSection .subContainer {
+.aboutSection .subContainer, .workSection .subContainer, .skillSection .subContainer, .contactSection .subContainer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -142,6 +146,11 @@ body {
   display: block;
   font-size: 2em;
   width: 100%;
+  margin: 10px 0;
+}
+.skillSection .skillContent {
+  display: inline-block;
+  width: 80%;
 }
 .skillSection .skillImage {
   -webkit-border-radius: 50%;
@@ -155,27 +164,16 @@ body {
   background: #5986b2;
 }
 
-.skill-ul li {
-  cursor: pointer;
-  margin: 10px 0;
-  padding: 0 10px;
-  font-size: 1.2em;
-}
-
 footer {
-  -webkit-box-shadow: inset 0px 1px 2px black;
-  -moz-box-shadow: inset 0px 1px 2px black;
-  box-shadow: inset 0px 1px 2px black;
   position: relative;
   top: 100%;
   right: 0;
   bottom: 0;
   left: 0;
-  background: #2c4359;
+  border-top: 2px solid #2c4359;
   text-align: center;
-  color: #f8deaa;
   padding: 15px 0;
 }
 footer a {
-  color: #f8deaa;
+  background: #f8deaa;
 }
