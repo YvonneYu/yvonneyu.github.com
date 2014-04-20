@@ -1,0 +1,181 @@
+@import url(normalize.css);
+@import url(skeleton.css);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+body {
+  height: 1500px;
+  font-size: 16px;
+  background: #f1bd56;
+}
+
+.mainTitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  -webkit-box-shadow: 0px 2px 3px #1f1f1f;
+  -moz-box-shadow: 0px 2px 3px #1f1f1f;
+  box-shadow: 0px 2px 3px #1f1f1f;
+  height: 400px;
+  background: #5986b2;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.mainTitle .navSection {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  background: #5986b2;
+}
+.mainTitle .navSection nav {
+  font-size: 1.5rem;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+.mainTitle .navSection nav .link {
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  color: #ffc248;
+  padding: 5px 15px;
+}
+.mainTitle .navSection nav .link:hover {
+  color: #f1bd56;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+.mainTitle .navSection.navbar-fixed {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 3px;
+  position: fixed;
+  text-align: right;
+  width: 150px;
+}
+.mainTitle .navSection.navbar-fixed nav {
+  margin: 10px;
+}
+.mainTitle .nameTitle {
+  font-size: 2.5rem;
+  margin: 100px auto;
+  width: 400px;
+}
+.mainTitle .nameTitle .name {
+  padding: 0 12px;
+  font-size: 4.5rem;
+  border-bottom: solid 2px;
+  display: inline-block;
+}
+.mainTitle .bottomTriangle {
+  border-style: solid;
+  border-width: 25px 25px 0;
+  border-color: #5986b2 transparent transparent transparent;
+  position: absolute;
+  bottom: -25px;
+  left: 47%;
+}
+.mainTitle .bottomTriangle::after {
+  content: "";
+  border-style: solid;
+  border-width: 25px 25px 0;
+  border-color: rgba(31, 31, 31, 0.5) transparent transparent transparent;
+  position: absolute;
+  bottom: -2px;
+  z-index: -1;
+  left: -25px;
+}
+
+.mainSection {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 3%;
+}
+
+.aboutSection .largeTitle, .workSection .largeTitle, .skillSection .largeTitle {
+  font-size: 2em;
+}
+.aboutSection .subContainer, .workSection .subContainer, .skillSection .subContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.aboutSection .uiuc .title,
+.aboutSection .gss .title {
+  font-size: 1.2rem;
+}
+.aboutSection .uiuc .date,
+.aboutSection .gss .date {
+  font-size: 0.9rem;
+}
+.aboutSection .uiuc .name,
+.aboutSection .gss .name {
+  font-size: 1.2rem;
+}
+.aboutSection .gss {
+  margin-top: 10px;
+}
+.aboutSection .myImg {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/me.jpg");
+  background-size: 200px 200px;
+}
+
+.skillSection {
+  text-align: center;
+}
+.skillSection .skillTitle {
+  display: block;
+  font-size: 2em;
+  width: 100%;
+}
+.skillSection .skillImage {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: #5986b2;
+}
+
+.skill-ul li {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+footer {
+  -webkit-box-shadow: inset 0px 1px 2px black;
+  -moz-box-shadow: inset 0px 1px 2px black;
+  box-shadow: inset 0px 1px 2px black;
+  position: relative;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c4359;
+  text-align: center;
+  color: #f8deaa;
+  padding: 15px 0;
+}
+footer a {
+  color: #f8deaa;
+}

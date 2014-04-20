@@ -1,0 +1,197 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'normalize.css';
+@import 'skeleton.css';
+@import 'compass/css3';
+
+$backgroundColor: #F1BD56;
+$titleColor: #5986b2;
+$titleHeight: 400px;
+$skillList: java, f2e;
+
+@mixin absolutePosition($top: 0, $right: 0, $bottom: 0, $left: 0){
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin relativePosition($top: 0, $right: 0, $bottom: 0, $left: 0){
+  position: relative;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin fixedPosition($top: 0, $right: 0, $bottom: 0, $left: 0){
+  position: fixed;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+body{
+  height: 1500px;
+  font-size: 16px;
+  background: $backgroundColor;
+}
+
+.mainTitle {
+  @include absolutePosition($bottom: auto);
+  @include box-shadow(0px 2px 3px #1F1F1F);
+  height: 400px;
+  background: $titleColor;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  .navSection {
+    @include absolutePosition($right: auto, $bottom: auto);
+    background: $titleColor;
+    nav{
+      font-size: 1.5rem;
+      //color: scale-lightness($backgroundColor, 20%);
+      margin-right: 50px;
+      margin-top: 20px;
+      .link {
+        @include text-shadow(0 -1px 1px rgba(0,0,0,0.8));
+        cursor: pointer;
+        color: adjust-saturation($backgroundColor, 50%);
+        padding: 5px 15px;
+        &:hover {
+          color: $backgroundColor;
+          @include text-shadow(0 1px 1px rgba(0,0,0,0.8));
+        }
+      }
+    }
+    &.navbar-fixed {
+      @include box-shadow(0px 1px 2px rgba(0,0,0,0.5));
+      border-bottom-right-radius: 3px;
+      position: fixed;
+      text-align: right;
+      width: 150px;
+      nav {
+        margin: 10px;
+      }
+    }
+  }
+  .nameTitle {
+    font-size: 2.5rem;
+    margin: 100px auto;
+    width: $titleHeight;
+    .name{
+      padding: 0 12px;
+      font-size: 4.5rem;
+      border-bottom: solid 2px;
+      display: inline-block;
+    }
+  }
+  .bottomTriangle{
+    // bottom triangle
+    border-style: solid;
+    border-width: 25px 25px 0;
+    border-color: $titleColor transparent transparent transparent;
+    position: absolute;
+    bottom: -25px;
+    left: 47%;
+    &::after {
+      content: "";
+      border-style: solid;
+      border-width: 25px 25px 0;
+      border-color: rgba(31,31,31,0.5) transparent transparent transparent;
+      position: absolute;
+      bottom: -2px;
+      z-index: -1;
+      left: -25px;
+    }
+  }
+}
+
+.mainSection {
+  @include absolutePosition($top: $titleHeight + 50px);
+  padding: 0 3%;
+}
+%mySection {
+  .largeTitle {
+    font-size: 2em;
+  }
+  .subContainer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.aboutSection{
+  @extend %mySection;
+  .uiuc,
+  .gss{
+    .title {
+      font-size: 1.2rem;
+    }
+    .date{
+      font-size: 0.9rem;
+    }
+    .name{
+      font-size: 1.2rem;
+    }
+  }
+  .gss {
+    margin-top: 10px;
+  }
+  .myImg {
+    @include border-radius(50%);
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    background: url('../../images/me.jpg');
+    background-size: 200px 200px;
+  }
+}
+
+.workSection {
+  @extend %mySection;
+}
+
+.skillSection{
+  @extend %mySection;
+  text-align: center;
+  .skillTitle {
+    display: block;
+    font-size: 2em;
+    width: 100%;
+  }
+  .skillImage {
+    @include border-radius(50%);
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: $titleColor;
+  }
+}
+
+.skill-ul{
+  li{
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1.2em;
+  }
+}
+
+footer{
+  @include box-shadow(inset 0px 1px 2px black);
+  @include relativePosition($top: 100%);
+  background: shade($titleColor, 50%);
+  text-align: center;
+  color: tint($backgroundColor, 50%);
+  padding: 15px 0;
+  a {
+    color: tint($backgroundColor, 50%);
+  }
+}
