@@ -1,4 +1,6 @@
 @import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Cookie);
+@import url(fontello.css);
 @import url(skeleton.css);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
@@ -7,7 +9,7 @@
 body {
   height: 1500px;
   font-size: 16px;
-  background: #f1bd56;
+  background: #f9e5ca;
 }
 
 .mainTitle {
@@ -20,7 +22,7 @@ body {
   -moz-box-shadow: 0px 2px 3px #1f1f1f;
   box-shadow: 0px 2px 3px #1f1f1f;
   height: 400px;
-  background: #5986b2;
+  background: #45678a;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -30,7 +32,7 @@ body {
   right: auto;
   bottom: auto;
   left: 0;
-  background: #5986b2;
+  background: #45678a;
 }
 .mainTitle .navSection nav {
   font-size: 1.5rem;
@@ -40,11 +42,11 @@ body {
 .mainTitle .navSection nav .link {
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  color: #ffc248;
+  color: #ffe6c4;
   padding: 5px 15px;
 }
 .mainTitle .navSection nav .link:hover {
-  color: #f1bd56;
+  color: #f9e5ca;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
 .mainTitle .navSection.navbar-fixed {
@@ -60,20 +62,68 @@ body {
   margin: 10px;
 }
 .mainTitle .nameTitle {
-  font-size: 2.5rem;
-  margin: 100px auto;
-  width: 400px;
+  font-family: 'Cookie', cursive;
+  color: #f9e5ca;
+  position: relative;
+  top: 15%;
+  left: 33%;
+  width: 570px;
+  height: 550px;
+  background: url("../../images/my.png") no-repeat;
+  background-position: 100% 45px;
+  background-size: 350px;
 }
 .mainTitle .nameTitle .name {
+  font-size: 8rem;
   padding: 0 12px;
-  font-size: 4.5rem;
-  border-bottom: solid 2px;
   display: inline-block;
+}
+.mainTitle .nameTitle .subTitle {
+  font-size: 2.5rem;
+  position: relative;
+  margin: -5px 80px;
+}
+.mainTitle .nameTitle .subTitle .wannaMessage {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  left: -200px;
+  background: #dd4e0c;
+  color: #f9e5ca;
+  padding: 10px 20px;
+}
+.mainTitle .nameTitle .subTitle .wannaMessage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border-style: solid;
+  border-width: 30px 30px 0 0;
+  border-color: #dd4e0c transparent transparent transparent;
+}
+.mainTitle .nameTitle .myImg {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  width: 200px;
+  height: 200px;
+  background: url("../../images/me.jpg");
+  background-size: 200px 200px;
 }
 .mainTitle .bottomTriangle {
   border-style: solid;
   border-width: 25px 25px 0;
-  border-color: #5986b2 transparent transparent transparent;
+  border-color: #45678a transparent transparent transparent;
   position: absolute;
   bottom: -25px;
   left: 47%;
@@ -98,49 +148,54 @@ body {
   padding: 0 3%;
 }
 
-.aboutSection, .workSection, .skillSection, .contactSection {
-  margin-top: 15px;
-  margin-bottom: 15px;
+.aboutSection, .workSection {
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.aboutSection .largeTitle, .workSection .largeTitle, .skillSection .largeTitle, .contactSection .largeTitle {
-  font-size: 2em;
+.aboutSection .textHeader, .workSection .textHeader {
+  text-align: right;
 }
-.aboutSection .subContainer, .workSection .subContainer, .skillSection .subContainer, .contactSection .subContainer {
+.aboutSection .subContainer, .workSection .subContainer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.aboutSection .uiuc .title,
-.aboutSection .gss .title {
+.line {
+  width: 625px;
+  color: #45678a;
+  margin: 10px auto;
+}
+.line::before, .line::after {
+  content: "";
+  display: inline-block;
+  background: url("../../images/line.png") repeat-x;
+  width: 300px;
+  height: 10px;
+}
+
+.workSection .uiuc .title,
+.workSection .gss .title {
   font-size: 1.2rem;
 }
-.aboutSection .uiuc .date,
-.aboutSection .gss .date {
+.workSection .uiuc .date,
+.workSection .gss .date {
   font-size: 0.9rem;
 }
-.aboutSection .uiuc .name,
-.aboutSection .gss .name {
+.workSection .uiuc .name,
+.workSection .gss .name {
   font-size: 1.2rem;
 }
-.aboutSection .gss {
+.workSection .gss {
   margin-top: 10px;
-}
-.aboutSection .myImg {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  float: right;
-  width: 200px;
-  height: 200px;
-  background: url("../../images/me.jpg");
-  background-size: 200px 200px;
 }
 
 .skillSection {
   text-align: center;
+  line-height: 24px;
+}
+.skillSection .f2eSkill {
+  margin-bottom: 20px;
 }
 .skillSection .skillTitle {
   display: block;
@@ -152,7 +207,7 @@ body {
   display: inline-block;
   width: 80%;
 }
-.skillSection .skillImage {
+.skillSection .html5Image {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -161,7 +216,55 @@ body {
   display: inline-block;
   width: 150px;
   height: 150px;
-  background: #5986b2;
+  background: url("../../images/base.png") no-repeat;
+  background-size: 150px 150px;
+}
+.skillSection .phoneImage {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/phone.png") no-repeat;
+  background-size: 150px 150px;
+}
+.skillSection .javaImage {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/java.png") no-repeat;
+  background-size: 150px 150px;
+}
+.skillSection .moreImage {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background: url("../../images/more.png") no-repeat;
+  background-size: 150px 150px;
+}
+
+.contactSection {
+  font-size: 1.2em;
+}
+.contactSection .subSection {
+  width: 320px;
+  margin: 15px auto;
+}
+.contactSection a {
+  color: black;
 }
 
 footer {
@@ -170,10 +273,10 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  border-top: 2px solid #2c4359;
+  border-top: 2px solid #223345;
   text-align: center;
   padding: 15px 0;
 }
 footer a {
-  background: #f8deaa;
+  background: #fcf2e4;
 }
