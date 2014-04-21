@@ -288,6 +288,7 @@ body{
   .gss{
     .title {
       font-size: 1.2rem;
+      font-weight: 700;
     }
     .date{
       font-size: 0.9rem;
@@ -351,4 +352,15 @@ footer{
   a {
     background: tint($backgroundColor, 50%);
   }
+}
+
+.resize {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: url("#{$image-url}resize.png") no-repeat;
+  background-size: 75px;
 }

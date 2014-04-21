@@ -243,6 +243,7 @@ body {
 .workSection .uiuc .title,
 .workSection .gss .title {
   font-size: 1.2rem;
+  font-weight: 700;
 }
 .workSection .uiuc .date,
 .workSection .gss .date {
@@ -345,4 +346,15 @@ footer {
 }
 footer a {
   background: #fcf2e4;
+}
+
+.resize {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: url("../../images/resize.png") no-repeat;
+  background-size: 75px;
 }
