@@ -166,7 +166,7 @@ body{
       }
     }
     @include mediaQueryMobileP(){
-      width: 300px;
+      width: 320px;
       top: 10%;
       left: 5%;
       background-position: 0 0;
@@ -187,6 +187,7 @@ body{
           position: relative;
           top: auto;
           left: auto;
+          padding: 0px 10px;
           &::before {
             content: none;
           }
