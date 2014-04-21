@@ -107,18 +107,59 @@ body {
   border-width: 30px 30px 0 0;
   border-color: #dd4e0c transparent transparent transparent;
 }
-.mainTitle .nameTitle .myImg {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  float: right;
-  width: 200px;
-  height: 200px;
-  background: url("../../images/me.jpg");
-  background-size: 200px 200px;
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .mainTitle .nameTitle {
+    width: 450px;
+    top: 15%;
+    left: 28%;
+    background-position: 100% 25px;
+    background-size: 350px;
+  }
+  .mainTitle .nameTitle .name {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainTitle .nameTitle {
+    width: 300px;
+    top: 10%;
+    left: 5%;
+    background-position: 0 0;
+    background-size: 300px;
+  }
+  .mainTitle .nameTitle .name {
+    font-size: 5rem;
+  }
+  .mainTitle .nameTitle .subTitle {
+    margin: -5px 50px;
+  }
+  .mainTitle .nameTitle .subTitle .f2eMessage,
+  .mainTitle .nameTitle .subTitle .wannaMessage {
+    display: inline-block;
+  }
+  .mainTitle .nameTitle .subTitle .f2eMessage {
+    width: 300px;
+  }
+  .mainTitle .nameTitle .subTitle .wannaMessage {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .mainTitle .nameTitle .subTitle .wannaMessage::before {
+    content: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mainTitle .nameTitle {
+    width: 350px;
+    top: 15%;
+    left: 25%;
+    background-position: 100% 15px;
+    background-size: 300px;
+  }
+  .mainTitle .nameTitle .name {
+    font-size: 5rem;
+  }
 }
 .mainTitle .bottomTriangle {
   border-style: solid;
@@ -172,6 +213,30 @@ body {
   background: url("../../images/line.png") repeat-x;
   width: 300px;
   height: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .line {
+    width: 625px;
+  }
+  .line::before, .line::after {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .line {
+    width: 300px;
+  }
+  .line::before, .line::after {
+    width: 135px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .line {
+    width: 525px;
+  }
+  .line::before, .line::after {
+    width: 225px;
+  }
 }
 
 .workSection .uiuc .title,
