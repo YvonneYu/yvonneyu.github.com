@@ -197,7 +197,7 @@ body{
     @include mediaQueryMobileL(){
       width: 350px;
       top: 15%;
-      left: 25%;
+      left: 17%;
       background-position: 100% 15px;
       background-size: 300px;
       .name{
@@ -271,7 +271,7 @@ body{
   @include mediaQueryMobileL(){
     width: 525px;
     &::before, &::after {
-      width: 225px;
+      width: 200px;
     }
   }
 }
@@ -317,6 +317,12 @@ body{
   .skillContent {
     display: inline-block;
     width: 80%;
+    @include mediaQueryMobileP(){
+      width: 95%;
+    }
+    @include mediaQueryMobileL(){
+      width: 90%;
+    }
   }
   .html5Image {
     @include skillImage('base.png');
