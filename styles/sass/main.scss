@@ -15,6 +15,8 @@ $titleHeight: 400px;
 $image-url: '../../images/';
 $skillList: java, f2e;
 
+$bubblesColor: rgb(221,78,12);
+
 @mixin mediaQueryTabletP(){
   //#Tablet (Portrait)
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -79,40 +81,11 @@ body{
 .mainTitle {
   @include absolutePosition($bottom: auto);
   @include box-shadow(0px 2px 3px #1F1F1F);
+  z-index: 1;
   height: 400px;
   background: $titleColor;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  .navSection {
-    @include absolutePosition($right: auto, $bottom: auto);
-    background: $titleColor;
-    nav{
-      font-size: 1.5rem;
-      //color: scale-lightness($backgroundColor, 20%);
-      margin-right: 50px;
-      margin-top: 20px;
-      .link {
-        @include text-shadow(0 -1px 1px rgba(0,0,0,0.8));
-        cursor: pointer;
-        color: adjust-saturation($backgroundColor, 50%);
-        padding: 5px 15px;
-        &:hover {
-          color: $backgroundColor;
-          @include text-shadow(0 1px 1px rgba(0,0,0,0.8));
-        }
-      }
-    }
-    &.navbar-fixed {
-      @include box-shadow(0px 1px 2px rgba(0,0,0,0.5));
-      border-bottom-right-radius: 3px;
-      position: fixed;
-      text-align: right;
-      width: 150px;
-      nav {
-        margin: 10px;
-      }
-    }
-  }
   .nameTitle {
     font-family: 'Cookie', cursive;
     color: $backgroundColor;
@@ -130,13 +103,12 @@ body{
       display: inline-block;
     }
     .subTitle {
+      font-family: 'Gloria Hallelujah', cursive;
       font-size: 2.5rem;
       position: relative;
       margin: -5px 80px;
       .wannaMessage{
-        $bubblesColor: rgb(221,78,12);
         @include border-radius(25px);
-        font-family: 'Gloria Hallelujah', cursive;
         font-size: 2rem;
         position: absolute;
         top: 20px;
@@ -226,6 +198,51 @@ body{
   }
 }
 
+.navSection {
+  //@include absolutePosition($right: auto, $bottom: auto);
+  //background: $titleColor;
+  $navColor: adjust-color($bubblesColor, $blue: -20);
+  position: absolute;
+  top: $titleHeight;
+  left: 35px;
+  padding: 10px;
+  background: $navColor;
+  font-size: 1.5em;
+  width: 90px;
+  height: 70px;
+  &::before, &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -39px;
+  }
+  &::before{
+    border-style: solid;
+    border-width: 40px 60px 0 0;
+    border-color: $navColor transparent transparent transparent;
+    left: 0;
+  }
+  &::after{
+    border-style: solid;
+    border-width: 0 60px 40px 0;
+    border-color: transparent $navColor transparent transparent;
+    right: 0;
+  }
+  .link {
+    @include text-shadow(0 -1px 1px rgba(0, 0, 0, 0.8));
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: adjust-saturation($backgroundColor, 30%);
+    &:not(.selected):hover {
+      color: $backgroundColor;
+      @include text-shadow(0 1px 1px rgba(0, 0, 0, 0.8));
+    }
+    &.selected {
+      border-bottom: 1px solid adjust-saturation($backgroundColor, -50%);;
+    }
+  }
+}
 
 .mainSection {
   @include absolutePosition($top: $titleHeight + 50px);
@@ -236,6 +253,12 @@ body{
   line-height: 24px;
   margin-top: 20px;
   margin-bottom: 30px;
+  a {
+    color: black;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
   .textHeader{
     text-align: right;
   }

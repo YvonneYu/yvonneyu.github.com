@@ -24,3 +24,4 @@ javascripts_dir = "javascripts"
 preferred_syntax = :scss
 
 line_comments = false # by Fire.app 
+output_style = :compressed # by Fire.app 
