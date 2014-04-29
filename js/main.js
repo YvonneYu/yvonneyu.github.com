@@ -35,18 +35,20 @@ $(document).ready(function() {
         } else {
             setEn();
         }
+
+        $('#chineseLink').on('click touchend', function (){
+            console.log('toggle');
+            if (globalLang != "zh-tw") {
+                setChinese();
+            }
+        })
+
+        $('#engLink').on('click touchend', function (){
+            console.log('toggle engLink');
+            if (globalLang != "en") {
+                setEn();
+            }
+        })
     })();
-
-    $('#chineseLink').on('click touchstart', function (){
-        if (globalLang != "zh-tw") {
-            setChinese();
-        }
-    })
-
-    $('#engLink').on('click touchstart', function (){
-        if (globalLang != "en") {
-            setEn();
-        }
-    })
 
 });
