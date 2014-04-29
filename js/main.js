@@ -37,13 +37,13 @@ $(document).ready(function() {
         }
     })();
 
-    $('#chineseLink').on('click', function (){
+    $('#chineseLink').on('click touchstart', function (){
         if (globalLang != "zh-tw") {
             setChinese();
         }
     })
 
-    $('#engLink').on('click', function (){
+    $('#engLink').on('click touchstart', function (){
         if (globalLang != "en") {
             setEn();
         }

@@ -392,4 +392,7 @@ footer{
   right: 0;
   background: url("#{$image-url}resize.png") no-repeat;
   background-size: 75px;
+  @include mediaQueryMobileP(){
+    display: none;
+  }
 }
