@@ -17,6 +17,13 @@ $skillList: java, f2e;
 
 $bubblesColor: rgb(221,78,12);
 
+@mixin mediaQueryBelowTablet(){
+  //#Mobile (Landscape)
+  @media only screen and (max-width: 880px) {
+    @content
+  }
+}
+
 @mixin mediaQueryTabletP(){
   //#Tablet (Portrait)
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -81,7 +88,7 @@ body{
 .mainTitle {
   @include absolutePosition($bottom: auto);
   @include box-shadow(0px 2px 3px #1F1F1F);
-  z-index: 1;
+  z-index: 2;
   height: 400px;
   background: $titleColor;
   border-bottom-right-radius: 8px;
@@ -129,6 +136,7 @@ body{
     }
     @include mediaQueryTabletP(){
       width: 450px;
+      height: 350px;
       top: 15%;
       left: 28%;
       background-position: 100% 25px;
@@ -139,6 +147,7 @@ body{
     }
     @include mediaQueryMobileP(){
       width: 320px;
+      height: 320px;
       top: 10%;
       left: 5%;
       background-position: 0 0;
@@ -168,6 +177,7 @@ body{
     }
     @include mediaQueryMobileL(){
       width: 350px;
+      height: 350px;
       top: 15%;
       left: 17%;
       background-position: 100% 15px;
@@ -203,6 +213,7 @@ body{
   //background: $titleColor;
   $navColor: adjust-color($bubblesColor, $blue: -20);
   position: absolute;
+  z-index: 1;
   top: $titleHeight;
   left: 35px;
   padding: 10px;
@@ -228,6 +239,14 @@ body{
     border-color: transparent $navColor transparent transparent;
     right: 0;
   }
+  @include mediaQueryBelowTablet(){
+    width: 75px;
+    padding-bottom: 0px;
+    left: 30px;
+    &::before, &::after {
+      bottom: -30px;
+    }
+  }
   .link {
     @include text-shadow(0 -1px 1px rgba(0, 0, 0, 0.8));
     margin-bottom: 5px;
@@ -247,6 +266,9 @@ body{
 .mainSection {
   @include absolutePosition($top: $titleHeight + 50px);
   padding: 0 3%;
+  @include mediaQueryBelowTablet(){
+    top: $titleHeight + 30px;
+  }
 }
 
 %mySection {

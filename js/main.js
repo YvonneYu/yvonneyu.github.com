@@ -36,15 +36,13 @@ $(document).ready(function() {
             setEn();
         }
 
-        $('#chineseLink').on('click touchend', function (){
-            console.log('toggle');
+        $('#chineseLink').on('click', function (){
             if (globalLang != "zh-tw") {
                 setChinese();
             }
         })
 
-        $('#engLink').on('click touchend', function (){
-            console.log('toggle engLink');
+        $('#engLink').on('click', function (){
             if (globalLang != "en") {
                 setEn();
             }
