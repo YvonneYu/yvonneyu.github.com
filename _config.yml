@@ -4,7 +4,7 @@
 title: Yvonne Yu
 description: "Hello，我是 Yvonne。努力充實自己成為前端工程師中！"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/solid-jekyll" #important: start with /
+baseurl: "" #important: start with /
 url: "http://yvonneyu.github.com"
 
 # Build settings
