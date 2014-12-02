@@ -1,0 +1,95 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: Yvonne Yu
+description: "Hello，我是 Yvonne。努力充實自己成為前端工程師中！"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "/solid-jekyll" #important: start with /
+url: "http://yvonneyu.github.com"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031" 
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+  
+  
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: facebook
+    url: https://www.facebook.com/yvonne.yu.92372
+    
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - 台灣，新北市，板橋
+email: monkey6277@gmail.com
+tel:
+
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+    
+# Members information. Shown on About page.
+members:
+  - name: Mark Webber
+    position: CEO
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team01.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Paul Jameson
+    position: Lead Designer
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team02.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Laura Sommers
+    position: Lead Developer
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team03.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+  - name: Martin Blunt
+    position: Marketing
+    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    img: team04.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:name@domain.com
+      - title: twitter
+        url: http://twitter.com/handle
+    
+# Clients information. Shown on Home and About pages.
+clients: #暫時關閉
+ # - name: dribbble
+ #   img: client01.png
+    
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "一邊努力充實前端知識，一邊想煮好吃的食物。"
+
+# Testimonial content. Shown on Home and About page. 
+testimonial:
+    message1: "大家都叫我 Yvonne 或 YY。經常擔任朋友間的和事佬，個性熱情積極，樂觀外向，只是有時候會有點太樂觀，所以朋友常常說我是個傻大姐。"
+    message2: "我一直對前端很有興趣，也很喜歡寫完程式的滿足感。我常常上網研究新的前端技術。看到別人寫的酷炫網頁，會馬上研究他們的寫法跟技巧。對於寫程式方面，我覺得寫出 可重用 & 好維護 的程式是首要目標。"
+    message3: "過去工作三年的經驗讓我學到 分享 是最好的學習方式。不吝嗇的分享知識給大家，別人也會用相同的態度對你。是我跟設計師合作學到最重要的事，追求畫面精準跟一致會讓使用者感受到產品的細心跟用心。 "
+    author: Yvonne Yu
+    position: '{{ eat | fun | coding }}'

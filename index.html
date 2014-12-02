@@ -1,44 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Yvonne's resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="styles/stylesheets/main.css" type="text/css" charset="utf-8">
-</head>
-<body>
+---
+layout: index
+title: Home
+permalink: /
+---
 
-<!-- title-->
-<header class="mainTitle">
-    <div class="nameTitle">
-        <span class="name">Yvonne Yu</span>
-        <section class="subTitle">
-            <span class="wannaMessage">wanna be</span>
-            <span id="f2eTitle" class="f2eMessage"></span>
-        </section>
-    </div>
-    <!--<div class="bottomTriangle"></div>-->
-</header>
-    <section id="navSection" class="navSection">
-        <nav>
-            <span id="chineseLink" class="link">中文</span>
-            <span id="engLink" class="link">English</span>
-        </nav>
-    </section>
-<section id="mainContain" class="mainSection container">
-</section>
-<span class="resize"></span>
+<div id="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-4">
+                <i class="fa fa-trophy"></i>
+                <h4>我在前端 ng 時</h4>
+                <p>開啟我寫部落格之路的鐵人30 紀錄文</p>
+                <p><br/><a href="#" class="btn btn-theme">More</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-rocket"></i>
+                <h4>程式碼</h4>
+                <p>平常寫寫的學習筆記</p>
+                <p><br/><a href="#" class="btn btn-theme">More</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-cutlery"></i>
+                <h4>食譜</h4>
+                <p>也該認真地記錄我的食譜了＾＾</p>
+                <p><br/><a href="#" class="btn btn-theme">More</a></p>
+            </div>		 				
+        </div>
+    </div><! --/container -->
+</div><! --/service -->
 
-<!--<div id="skrollr-body">-->
-    <!--<div id="preloader"></div>-->
-    <!--<div id="mainPage" class="centered" data-0="width:100%;" data-1000="width:0%;"></div>-->
-    <!--<div id="about" class="centered" data-1000="width:100%;" data-2000="width:0%;"></div>-->
-    <!--<div id="work" class="centered" data-2000="width:100%;" data-3000="width:0%;"></div>-->
-    <!--<div id="other" class="centered" data-3000="width:100%;" data-4000="width:0%;"></div>-->
-    <!--<div id="contact" class="centered" data-4000="width:100%;" data-5000="width:0%;"></div>-->
-<!--</div>-->
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-1">
+            <h4>More About Me.</h4>
+            <p>{{ site.about }}</p>
+            <p><br/><a href="{{ "/resume/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
+        </div>
 
-<!--&lt;!&ndash;<script src="lib/skrollr.js"></script>&ndash;&gt;-->
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+        <div class="col-lg-6">
+            <h4>Latest Posts</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['blog'] limit:5 %} 
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+            {% endfor %} 
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
