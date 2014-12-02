@@ -46,6 +46,14 @@ p {
 	margin-top: 10px; 
 }
 
+p.title {
+    margin-bottom: 0;
+}
+
+p.sub-title {
+    margin-top: 0;
+}
+
 img {
 	height: auto;
 	max-width: 100%;
