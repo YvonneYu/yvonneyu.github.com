@@ -3,6 +3,8 @@ layout: post
 title: "測試的 post"
 date: 2014-12-01 11:22:00
 author: Yvonne Yu
+title: "angularjs 抬頭"
+description: "測試的畫面"
 categories:
 - blog
 - AngularJS
