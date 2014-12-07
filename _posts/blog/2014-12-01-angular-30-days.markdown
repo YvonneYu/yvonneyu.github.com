@@ -3,30 +3,57 @@ layout: post
 title: "測試的 post"
 date: 2014-12-01 11:22:00
 author: Yvonne Yu
-title: "angularjs 抬頭"
+title: "鐵人賽文章 - 我在前端 ng 時"
 description: "測試的畫面"
 categories:
 - blog
 - AngularJS
-img: post03.jpg
-thumb: thumb03.jpg
+- 鐵人30天
+img: angularjs-logo.png
+thumb: angular-logo.png
 ---
 
-<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+2014 年的鐵人賽順利結束了...
 
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <!--more-->
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+當初因為學習 AngularJS 大概一年了，抱者想把學習 AngularJS 心得整理起來跟想重新學習基礎的心態下。
+跳入了 30 天 AngularJS 文章的坑。努力了兩個月，結束後的成就感滿滿。
 
-Contrary to popular belief, <b>Lorem Ipsum is not simply random text</b>. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at [Hampden-Sydney College][hampden] in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<
+也開啟了我想要把學習路上的文章開始整理起來的想法。<!--more-->
 
-Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+###鐵人賽文章
 
-####Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+以下是30天文章的內容，當初的文章在 [iThome](http://www.ithome.com.tw/) 都可以找的到。
+目前計劃把文章在部落格裡也發表一份，並且更新文章內容。
 
+####iThome 連結
 
->Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-
-[hampden]: https://github.com/jekyll/jekyll
+1. [初學 AngularJS 的路](http://ithelp.ithome.com.tw/question/10157123)
+2. [jQuery 跟 AngularJS 的糾葛](http://ithelp.ithome.com.tw/question/10157220)
+3. [AngularJS - MVC 架構](http://ithelp.ithome.com.tw/question/10157402)
+4. [AngularJS - MVC 架構 - DEMO](http://ithelp.ithome.com.tw/question/10157586)
+5. [相見恨晚 - Lo-Dash](http://ithelp.ithome.com.tw/question/10157832)
+6. [ng-if ＆ ng-show](http://ithelp.ithome.com.tw/question/10158108)
+7. [AngularJS Forms 的經驗談](http://ithelp.ithome.com.tw/question/10158241)
+8. [自己的 input 自己驗證](http://ithelp.ithome.com.tw/question/10158385)
+9. [自己的 input 自己 format](http://ithelp.ithome.com.tw/question/10158553)
+10. [初談 ng-filter](http://ithelp.ithome.com.tw/question/10158792)
+11. [ng-filter 的五四三](http://ithelp.ithome.com.tw/question/10158968)
+12. [初談 ui-router](http://ithelp.ithome.com.tw/question/10159149)
+13. [ui-router - 巢狀頁面](http://ithelp.ithome.com.tw/question/10159294)
+14. [ui-router - 監聽事件](http://ithelp.ithome.com.tw/question/10159440)
+15. [初談 directive](http://ithelp.ithome.com.tw/question/10159614)
+16. [初談 directive - scope](http://ithelp.ithome.com.tw/question/10159831)
+17. [初談 directive - isolate scope](http://ithelp.ithome.com.tw/question/10160003)
+18. [初談 directive - 完結](http://ithelp.ithome.com.tw/question/10160169)
+19. [初談 directive - 番外篇 - 傳送函式進 directive](http://ithelp.ithome.com.tw/question/10160314)
+20. [開發 AngularJS 的工具 - gulp](http://ithelp.ithome.com.tw/question/10160433)
+21. [SEO for AngularJS Website](http://ithelp.ithome.com.tw/question/10160609)
+22. [外部來的 HTML 安全嗎？ $sce & ng-sanitize](http://ithelp.ithome.com.tw/question/10160695)
+23. [AngularJS 結構 - 心路歷程](http://ithelp.ithome.com.tw/question/10160833)
+24. [模組化 - Modularity](http://ithelp.ithome.com.tw/question/10160976)
+25. [瞭解重要的 Providers](http://ithelp.ithome.com.tw/question/10161128)
+26. [Service，Factory 傻傻分不清楚](http://ithelp.ithome.com.tw/question/10161278)
+27. [AngularJS with 觸控裝置](http://ithelp.ithome.com.tw/question/10161353)
+28. [可以再快一點嗎？ - 介紹 bindonce](http://ithelp.ithome.com.tw/question/10161417)
+29. [生生不息的 watcher - 介紹 data-binding](http://ithelp.ithome.com.tw/question/10161497)
+30. [AngularJS 1.3 跟 一點點的 2.0 （外加鐵人心得）](http://ithelp.ithome.com.tw/question/10161588)
