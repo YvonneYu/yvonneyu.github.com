@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "測試的 post"
 date: 2014-12-01 11:22:00
 author: Yvonne Yu
 title: "鐵人賽文章 - 我在前端 ng 時"
-description: "測試的畫面"
+description: "鐵人賽文章"
 categories:
 - blog
 - AngularJS
