@@ -115,7 +115,7 @@ ps. 除了要注意食材數值的轉換外，烘烤的時間也要注意。<br>
 
 雖然不是很完美，可以還是給我親愛的試吃了。（哈）
 
-<img class="img-responsive" src="/assets/img/blog/recipes/banana_ch_pie/IMG_2980.jpg" alt="巧克力">
+<img class="img-responsive" src="/assets/img/blog/recipes/banana_ch_pie/IMG_2980.JPG" alt="巧克力">
 
 祝大家聖誕節快樂～<i class="fa fa-tree"></i><i class="fa fa-bell"></i>
 
